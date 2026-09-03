@@ -22,6 +22,10 @@ export const metadata: Metadata = {
   description: "Multilingual website for Tiberias View in Samma, Jordan.",
 };
 
+// This layout has no [locale] param of its own, so under Cache Components it's
+// prerendered once and shared across all locales — getLocale() here always
+// resolves to the default. The correct per-locale lang/dir is set client-side
+// by <DocumentAttributes> in app/[locale]/layout.tsx instead.
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ar" dir="rtl" className={`${latinFont.variable} ${arabicFont.variable} h-full antialiased`}>
