@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "homeTitle": "Tiberias View | Family Leisure Park in Al-Manshiya, Jordan",
+    "homeDescription": "Scenic views over Lake Tiberias with family seating, kids' play area, and dedicated barbecue spaces.",
+    "bookingTitle": "Reservation Request | Tiberias View",
+    "bookingDescription": "Send a reservation request and we will contact you to confirm your booking.",
+    "adminTitle": "Reservations Admin"
+  },
+  "common": {
+    "brand": "Tiberias View",
+    "arabicName": "متنزه واستراحة بحيرة طبريا - صما",
+    "phone": "+962 7 7225 6108",
+    "locationAr": "HJXM+M98، المنشية، الأردن",
+    "locationEn": "HJXM+M98, Al-Manshiya, Jordan",
+    "open24": "Open 24 hours"
+  },
+  "language": {
+    "switch": "Language",
+    "ar": "العربية",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "facilities": "Facilities",
+    "gallery": "Gallery",
+    "location": "Location",
+    "booking": "Booking"
+  },
+  "hero": {
+    "title": "Tiberias View",
+    "headline": "Scenic views, family moments, and memories that last",
+    "description": "Enjoy a beautiful view over Lake Tiberias and calm family seating in a natural outdoor setting.",
+    "chips": {
+      "family": "Family Seating",
+      "kids": "Kids' Play Area",
+      "grill": "Barbecue Areas",
+      "view": "Lake View"
+    }
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "title": "A scenic view over Lake Tiberias",
+    "description": "A calm and welcoming retreat for family gatherings, with safe children areas and dedicated barbecue spaces, all set against the unique landscape around Lake Tiberias."
+  },
+  "features": {
+    "eyebrow": "Facilities",
+    "title": "What the park offers",
+    "description": "A family-friendly destination that combines comfort, nature, and an inspiring view.",
+    "items": {
+      "family": "Family Areas",
+      "kids": "Safe Kids' Play Area",
+      "grill": "Dedicated Barbecue Areas",
+      "view": "View of Lake Tiberias",
+      "photo": "Photogenic Spots",
+      "nature": "Natural Outdoor Atmosphere"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Impressions",
+    "title": "Gallery",
+    "description": "Real photos from the venue to give you an authentic impression.",
+    "hint": "Tap any image for fullscreen view",
+    "heroSunsetAlt": "Sunset view at Tiberias View",
+    "heartViewAlt": "Heart-shaped photo spot overlooking Lake Tiberias",
+    "fountainTerraceAlt": "Family terrace and fountain area at the park"
+  },
+  "bookingCta": {
+    "title": "Planning a visit?",
+    "description": "Send your reservation request and we will contact you to confirm availability.",
+    "button": "Book now"
+  },
+  "booking": {
+    "title": "Reservation Request",
+    "description": "Fill out the form below to send a reservation request. Bookings are not auto-confirmed.",
+    "statusNote": "Every new request starts with: pending",
+    "submit": "Send reservation request",
+    "submitting": "Sending...",
+    "fields": {
+      "fullName": "Full name",
+      "phone": "Phone number",
+      "whatsapp": "WhatsApp number",
+      "date": "Date",
+      "time": "Preferred time",
+      "guestCount": "Number of guests",
+      "reservationType": "Reservation type",
+      "message": "Message / special requests"
+    },
+    "types": {
+      "family_visit": "Family visit",
+      "grill_area": "Barbecue spot",
+      "group_visit": "Group visit",
+      "special_occasion": "Special occasion",
+      "other": "Other"
+    },
+    "success": "Your reservation request has been received. We will contact you to confirm your booking.",
+    "error": "Unable to submit your request right now. Please try again.",
+    "sendWhatsApp": "Also send request details via WhatsApp",
+    "whatsappNote": "No message is sent automatically without your confirmation inside WhatsApp."
+  },
+  "validation": {
+    "fullNameMin": "Please enter a valid full name",
+    "phoneMin": "Please enter a valid phone number",
+    "phoneMax": "Phone number is too long",
+    "whatsappMax": "WhatsApp number is too long",
+    "dateRequired": "Please choose a date",
+    "timeRequired": "Please choose a time",
+    "guestMin": "At least 1 guest is required",
+    "guestMax": "Maximum is 200 guests",
+    "messageMax": "Message is too long",
+    "emailInvalid": "Please enter a valid email",
+    "passwordMin": "Password is too short",
+    "idInvalid": "Invalid ID"
+  },
+  "location": {
+    "eyebrow": "Find Us",
+    "title": "Location",
+    "description": "Open the location directly in maps.",
+    "openMap": "Open in Maps"
+  },
+  "contact": {
+    "eyebrow": "We're Here To Help",
+    "title": "Contact",
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "facebook": "Facebook"
+  },
+  "admin": {
+    "title": "Reservation Management",
+    "loginTitle": "Admin Login",
+    "email": "Email",
+    "password": "Password",
+    "login": "Sign in",
+    "logout": "Sign out",
+    "loadError": "Failed to load data",
+    "status": "Status",
+    "date": "Date",
+    "time": "Time",
+    "guestCount": "Guests",
+    "name": "Name",
+    "phone": "Phone",
+    "actions": "Actions",
+    "filterStatus": "Filter by status",
+    "filterDate": "Filter by date",
+    "allStatuses": "All statuses",
+    "empty": "No requests yet",
+    "updated": "Status updated",
+    "updateFailed": "Failed to update status",
+    "openWhatsApp": "Open WhatsApp",
+    "statuses": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "rejected": "Rejected",
+      "cancelled": "Cancelled"
+    },
+    "setTo": {
+      "confirmed": "Confirm",
+      "rejected": "Reject",
+      "cancelled": "Cancel"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "linksTitle": "Quick Links"
+  },
+  "cta": {
+    "bookNow": "Book now",
+    "whatsapp": "Contact on WhatsApp",
+    "openMaps": "Open in Maps"
+  }
+}

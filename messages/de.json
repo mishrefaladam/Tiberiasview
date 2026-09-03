@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "homeTitle": "Tiberias View | Familienpark in Al-Manshiya, Jordanien",
+    "homeDescription": "Wunderschöne Aussicht auf den See Tiberias mit Familienbereichen, Kinderspielzone und Grillplätzen.",
+    "bookingTitle": "Reservierungsanfrage | Tiberias View",
+    "bookingDescription": "Senden Sie Ihre Reservierungsanfrage. Wir kontaktieren Sie zur Bestätigung.",
+    "adminTitle": "Reservierungsverwaltung"
+  },
+  "common": {
+    "brand": "Tiberias View",
+    "arabicName": "متنزه واستراحة بحيرة طبريا - صما",
+    "phone": "+962 7 7225 6108",
+    "locationAr": "HJXM+M98، المنشية، الأردن",
+    "locationEn": "HJXM+M98, Al-Manshiya, Jordan",
+    "open24": "24 Stunden geöffnet"
+  },
+  "language": {
+    "switch": "Sprache",
+    "ar": "العربية",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "nav": {
+    "home": "Start",
+    "about": "Über uns",
+    "facilities": "Angebot",
+    "gallery": "Galerie",
+    "location": "Standort",
+    "booking": "Reservierung"
+  },
+  "hero": {
+    "title": "Tiberias View",
+    "headline": "Malerische Aussicht, familiäre Atmosphäre und besondere Momente",
+    "description": "Genießen Sie den Blick auf den See Tiberias sowie ruhige Familienbereiche inmitten der Natur.",
+    "chips": {
+      "family": "Familienbereiche",
+      "kids": "Kinderspielbereich",
+      "grill": "Grillbereiche",
+      "view": "Seeblick"
+    }
+  },
+  "about": {
+    "eyebrow": "Über uns",
+    "title": "Ein besonderer Blick auf den See Tiberias",
+    "description": "Ruhige Sitzbereiche für Familien, sichere Spielflächen für Kinder und ausgewiesene Grillzonen - eingebettet in die natürliche Umgebung rund um den See Tiberias."
+  },
+  "features": {
+    "eyebrow": "Ausstattung",
+    "title": "Was bietet der Park?",
+    "description": "Ein naturverbundener Ort für Familien mit Komfort und beeindruckender Aussicht.",
+    "items": {
+      "family": "Familienbereiche",
+      "kids": "Sicherer Kinderspielbereich",
+      "grill": "Ausgewiesene Grillbereiche",
+      "view": "Aussicht auf den See Tiberias",
+      "photo": "Fotospots",
+      "nature": "Naturnahes Ambiente"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Impressionen",
+    "title": "Galerie",
+    "description": "Echte Fotos der Anlage für einen realistischen Eindruck.",
+    "hint": "Tippen Sie auf ein Bild für die Vollansicht",
+    "heroSunsetAlt": "Sonnenuntergang im Tiberias View",
+    "heartViewAlt": "Herz-Fotospot mit Blick auf den See Tiberias",
+    "fountainTerraceAlt": "Familienterrasse und Brunnenbereich"
+  },
+  "bookingCta": {
+    "title": "Besuch geplant?",
+    "description": "Senden Sie Ihre Reservierungsanfrage. Wir melden uns zur Bestätigung.",
+    "button": "Jetzt reservieren"
+  },
+  "booking": {
+    "title": "Reservierungsanfrage",
+    "description": "Füllen Sie das Formular aus, um eine Reservierungsanfrage zu senden. Es erfolgt keine automatische Bestätigung.",
+    "statusNote": "Jede neue Anfrage startet mit dem Status: pending",
+    "submit": "Reservierungsanfrage senden",
+    "submitting": "Wird gesendet...",
+    "fields": {
+      "fullName": "Vor- und Nachname",
+      "phone": "Telefonnummer",
+      "whatsapp": "WhatsApp-Nummer",
+      "date": "Datum",
+      "time": "Gewünschte Uhrzeit",
+      "guestCount": "Anzahl Personen",
+      "reservationType": "Art der Reservierung",
+      "message": "Nachricht / besondere Wünsche"
+    },
+    "types": {
+      "family_visit": "Familienbesuch",
+      "grill_area": "Grillplatz",
+      "group_visit": "Gruppenbesuch",
+      "special_occasion": "Besonderer Anlass",
+      "other": "Andere"
+    },
+    "success": "Ihre Reservierungsanfrage wurde erfolgreich übermittelt. Wir kontaktieren Sie zur Bestätigung.",
+    "error": "Die Anfrage konnte derzeit nicht gesendet werden. Bitte versuchen Sie es erneut.",
+    "sendWhatsApp": "Anfragedaten zusätzlich über WhatsApp senden",
+    "whatsappNote": "Ohne Ihre Bestätigung in WhatsApp wird keine Nachricht automatisch versendet."
+  },
+  "validation": {
+    "fullNameMin": "Bitte geben Sie einen gültigen Namen ein",
+    "phoneMin": "Bitte geben Sie eine gültige Telefonnummer ein",
+    "phoneMax": "Telefonnummer ist zu lang",
+    "whatsappMax": "WhatsApp-Nummer ist zu lang",
+    "dateRequired": "Bitte wählen Sie ein Datum",
+    "timeRequired": "Bitte wählen Sie eine Uhrzeit",
+    "guestMin": "Mindestens 1 Person erforderlich",
+    "guestMax": "Maximal 200 Personen",
+    "messageMax": "Nachricht ist zu lang",
+    "emailInvalid": "Bitte geben Sie eine gültige E-Mail ein",
+    "passwordMin": "Passwort ist zu kurz",
+    "idInvalid": "Ungültige ID"
+  },
+  "location": {
+    "eyebrow": "So finden Sie uns",
+    "title": "Standort",
+    "description": "Öffnen Sie den Standort direkt in der Karten-App.",
+    "openMap": "Route öffnen"
+  },
+  "contact": {
+    "eyebrow": "Wir sind für Sie da",
+    "title": "Kontakt",
+    "call": "Anrufen",
+    "whatsapp": "WhatsApp",
+    "facebook": "Facebook"
+  },
+  "admin": {
+    "title": "Reservierungsverwaltung",
+    "loginTitle": "Admin-Anmeldung",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "loadError": "Daten konnten nicht geladen werden",
+    "status": "Status",
+    "date": "Datum",
+    "time": "Zeit",
+    "guestCount": "Gäste",
+    "name": "Name",
+    "phone": "Telefon",
+    "actions": "Aktionen",
+    "filterStatus": "Nach Status filtern",
+    "filterDate": "Nach Datum filtern",
+    "allStatuses": "Alle Status",
+    "empty": "Noch keine Anfragen",
+    "updated": "Status aktualisiert",
+    "updateFailed": "Status konnte nicht aktualisiert werden",
+    "openWhatsApp": "WhatsApp öffnen",
+    "statuses": {
+      "pending": "Ausstehend",
+      "confirmed": "Bestätigt",
+      "rejected": "Abgelehnt",
+      "cancelled": "Storniert"
+    },
+    "setTo": {
+      "confirmed": "Bestätigen",
+      "rejected": "Ablehnen",
+      "cancelled": "Stornieren"
+    }
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten",
+    "linksTitle": "Schnellzugriff"
+  },
+  "cta": {
+    "bookNow": "Jetzt reservieren",
+    "whatsapp": "Über WhatsApp kontaktieren",
+    "openMaps": "Route öffnen"
+  }
+}

@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tiberias View Website
 
-## Getting Started
+Production-ready Next.js website for:
 
-First, run the development server:
+- Arabic name: متنزه واستراحة بحيرة طبريا - صما
+- Brand: Tiberias View
+- Location: HJXM+M98, Al-Manshiya, Jordan
+
+## Stack
+
+- Next.js App Router + TypeScript
+- Tailwind CSS v4
+- next-intl (ar, en, de)
+- Supabase (reservations + admin auth)
+- Zod + React Hook Form
+- Lucide icons
+
+## Routes
+
+- `/` redirects to `/ar`
+- Localized pages:
+- `/ar`, `/en`, `/de`
+- `/ar/booking`, `/en/booking`, `/de/booking`
+- `/ar/admin`, `/en/admin`, `/de/admin`
+
+Arabic is the default locale and uses RTL.
+
+## Images
+
+Place real images in `public/images/`:
+
+- `hero-sunset.jpg`
+- `heart-view.jpg`
+- `fountain-terrace.jpg`
+
+Do not use Facebook screenshots or stock photos.
+
+## Environment Variables
+
+Copy `.env.example` to `.env.local` and set:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+NEXT_PUBLIC_SUPABASE_URL=...
+NEXT_PUBLIC_SUPABASE_ANON_KEY=...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+No credentials are hardcoded in the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Supabase Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Run SQL from `supabase/schema.sql` in your Supabase SQL editor.
+2. Create at least one admin user in Supabase Authentication.
+3. Use that admin account to log in on `/ar/admin` (or another locale).
 
-## Learn More
+## Reservation Logic
 
-To learn more about Next.js, take a look at the following resources:
+The booking form creates a reservation request only.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Initial status is always `pending`
+- Admin can change status to:
+- `confirmed`
+- `rejected`
+- `cancelled`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This avoids accidental double-booking while capacity/time slot rules are still evolving.
 
-## Deploy on Vercel
+## Local Development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm install
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open `http://localhost:3001`.
+
+## Build and Lint
+
+```bash
+npm run lint
+npm run build
+```

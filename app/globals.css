@@ -1,26 +1,170 @@
 @import "tailwindcss";
 
+@import "yet-another-react-lightbox/styles.css";
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-cream: #f8f5ee;
+  --color-deep-green: #17352a;
+  --color-gold: #c89b54;
+  --color-sunset: #c96f4a;
+  --color-ink: #1c1c1c;
+  --color-white: #ffffff;
+  --color-anthracite: #22252b;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-cream: var(--color-cream);
+  --color-deep-green: var(--color-deep-green);
+  --color-gold: var(--color-gold);
+  --color-sunset: var(--color-sunset);
+  --color-ink: var(--color-ink);
+  --color-white: var(--color-white);
+  --color-anthracite: var(--color-anthracite);
+  --font-sans: var(--font-latin);
+  --font-arabic: var(--font-arabic);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-latin), sans-serif;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  html[lang="ar"] body {
+    font-family: var(--font-arabic), sans-serif;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .tv-container {
+    margin-inline: auto;
+    width: min(1180px, 100% - 2rem);
+  }
+
+  .tv-section {
+    padding-block: 5rem;
+  }
+
+  .tv-card {
+    border-radius: 1rem;
+    background: var(--color-white);
+    border: 1px solid color-mix(in srgb, var(--color-deep-green) 12%, transparent);
+    box-shadow: 0 18px 40px rgba(12, 22, 18, 0.07);
+  }
+
+  .tv-eyebrow {
+    display: inline-block;
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--color-gold);
+  }
+
+  .tv-title {
+    font-size: clamp(1.8rem, 1.1rem + 2vw, 3rem);
+    line-height: 1.15;
+    margin: 0;
+  }
+
+  .tv-subtitle {
+    margin: 0;
+    color: color-mix(in srgb, var(--color-ink) 76%, white);
+    font-size: clamp(1rem, 0.95rem + 0.4vw, 1.2rem);
+    line-height: 1.8;
+  }
+
+  .tv-gradient-bg {
+    background-image: radial-gradient(circle at 12% 18%, rgba(201, 111, 74, 0.22), transparent 40%),
+      radial-gradient(circle at 88% 14%, rgba(23, 53, 42, 0.17), transparent 46%),
+      linear-gradient(170deg, #f9f7f1 0%, #f5f0e7 62%, #fff 100%);
+  }
+
+  .tv-focus {
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(200, 155, 84, 0.4);
+  }
+
+  .tv-input {
+    width: 100%;
+    border-radius: 0.8rem;
+    border: 1px solid color-mix(in srgb, var(--color-deep-green) 18%, transparent);
+    padding: 0.72rem 0.92rem;
+    background: var(--color-white);
+    color: var(--color-ink);
+  }
+
+  .tv-input:focus {
+    border-color: var(--color-gold);
+    box-shadow: 0 0 0 3px rgba(200, 155, 84, 0.24);
+  }
+
+  .tv-label {
+    margin-bottom: 0.45rem;
+    display: block;
+    font-weight: 600;
+    font-size: 0.93rem;
+  }
+
+  .tv-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 999px;
+    background: var(--color-gold);
+    color: var(--color-deep-green);
+    border: 1px solid transparent;
+    padding: 0.75rem 1.2rem;
+    font-weight: 700;
+    transition: all 180ms ease;
+  }
+
+  .tv-btn-primary:hover {
+    background: color-mix(in srgb, var(--color-gold) 88%, black);
+  }
+
+  .tv-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--color-white);
+    border: 1px solid color-mix(in srgb, var(--color-white) 55%, transparent);
+    padding: 0.72rem 1.2rem;
+    font-weight: 600;
+    transition: all 180ms ease;
+  }
+
+  .tv-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  .tv-reveal {
+    animation: riseFade 700ms ease both;
+  }
+}
+
+@keyframes riseFade {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
