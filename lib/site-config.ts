@@ -6,9 +6,9 @@ export const siteConfig = {
   whatsappDisplay: "+962772256108",
   whatsappHref: "https://wa.me/962772256108",
   facebookHref: "https://facebook.com/TiberiasView",
-  locationAr: "HJXM+M98، المنشية، الأردن",
-  locationEn: "HJXM+M98, Al-Manshiya, Jordan",
-  mapsQuery: "HJXM+M98 Al-Manshiya Jordan",
+  locationAr: "منتزه اطلالة طبريا، صما، الأردن",
+  locationEn: "Tiberias View Park, Samma, Jordan",
+  mapsQuery: "32.5993442,35.635033",
 } as const;
 
 export const galleryImages = [

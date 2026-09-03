@@ -4,7 +4,7 @@ Production-ready Next.js website for:
 
 - Arabic name: متنزه واستراحة بحيرة طبريا - صما
 - Brand: Tiberias View
-- Location: HJXM+M98, Al-Manshiya, Jordan
+- Location: Tiberias View Park, Samma, Jordan
 
 ## Stack
 

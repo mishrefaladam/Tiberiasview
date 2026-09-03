@@ -71,7 +71,7 @@ export default async function HomePage({params}: HomePageProps) {
     address: {
       "@type": "PostalAddress",
       streetAddress: siteConfig.locationEn,
-      addressLocality: "Al-Manshiya",
+      addressLocality: "Samma",
       addressCountry: "JO",
     },
     openingHoursSpecification: {
