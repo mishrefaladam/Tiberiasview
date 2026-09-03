@@ -33,10 +33,3 @@ export const reservationTypeOptions = [
   "special_occasion",
   "other",
 ] as const;
-
-export const reservationStatuses = [
-  "pending",
-  "confirmed",
-  "rejected",
-  "cancelled",
-] as const;

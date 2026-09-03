@@ -11,7 +11,6 @@ Production-ready Next.js website for:
 - Next.js App Router + TypeScript
 - Tailwind CSS v4
 - next-intl (ar, en, de)
-- Supabase (reservations + admin auth)
 - Zod + React Hook Form
 - Lucide icons
 
@@ -21,7 +20,6 @@ Production-ready Next.js website for:
 - Localized pages:
 - `/ar`, `/en`, `/de`
 - `/ar/booking`, `/en/booking`, `/de/booking`
-- `/ar/admin`, `/en/admin`, `/de/admin`
 
 Arabic is the default locale and uses RTL.
 
@@ -40,29 +38,24 @@ Do not use Facebook screenshots or stock photos.
 Copy `.env.example` to `.env.local` and set:
 
 ```bash
-NEXT_PUBLIC_SUPABASE_URL=...
-NEXT_PUBLIC_SUPABASE_ANON_KEY=...
+NEXT_PUBLIC_SITE_URL=...
 ```
 
 No credentials are hardcoded in the app.
 
-## Supabase Setup
+## Reservation Logic (v1: WhatsApp only)
 
-1. Run SQL from `supabase/schema.sql` in your Supabase SQL editor.
-2. Create at least one admin user in Supabase Authentication.
-3. Use that admin account to log in on `/ar/admin` (or another locale).
+There is no database or admin dashboard yet. The booking form (`/booking`) validates the
+request client-side, then builds a formatted WhatsApp message and opens
+`https://wa.me/962772256108` with that message pre-filled. Nothing is sent until the visitor
+presses send inside WhatsApp, and the UI clearly states this is a reservation **request**, not
+a confirmed booking — Tiberias View confirms availability directly over WhatsApp.
 
-## Reservation Logic
-
-The booking form creates a reservation request only.
-
-- Initial status is always `pending`
-- Admin can change status to:
-- `confirmed`
-- `rejected`
-- `cancelled`
-
-This avoids accidental double-booking while capacity/time slot rules are still evolving.
+The form schema (`lib/validation/reservation.ts`) and the message builder in
+`components/booking/booking-form.tsx` are kept separate on purpose, so a future version can add
+a backend (e.g. persist requests to a database and add an admin dashboard to manage/confirm
+them) without rewriting the booking UI — the new step would just run before or alongside the
+WhatsApp handoff in `onSubmit`.
 
 ## Local Development
 
@@ -71,7 +64,7 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:3001`.
+Open `http://localhost:3000`.
 
 ## Build and Lint
 

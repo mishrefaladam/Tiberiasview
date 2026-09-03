@@ -3,8 +3,7 @@
     "homeTitle": "Tiberias View | Familienpark in Samma, Jordanien",
     "homeDescription": "Wunderschöne Aussicht auf den See Tiberias mit Familienbereichen, Kinderspielzone und Grillplätzen.",
     "bookingTitle": "Reservierungsanfrage | Tiberias View",
-    "bookingDescription": "Senden Sie Ihre Reservierungsanfrage. Wir kontaktieren Sie zur Bestätigung.",
-    "adminTitle": "Reservierungsverwaltung"
+    "bookingDescription": "Senden Sie Ihre Reservierungsanfrage. Wir kontaktieren Sie zur Bestätigung."
   },
   "common": {
     "brand": "Tiberias View",
@@ -74,9 +73,9 @@
   "booking": {
     "title": "Reservierungsanfrage",
     "description": "Füllen Sie das Formular aus, um eine Reservierungsanfrage zu senden. Es erfolgt keine automatische Bestätigung.",
-    "statusNote": "Jede neue Anfrage startet mit dem Status: pending",
-    "submit": "Reservierungsanfrage senden",
-    "submitting": "Wird gesendet...",
+    "disclaimer": "Dies ist nur eine Reservierungsanfrage, keine bestätigte Buchung. Tiberias View meldet sich per WhatsApp, um die Verfügbarkeit zu bestätigen.",
+    "submit": "Anfrage über WhatsApp senden",
+    "submitting": "Wird vorbereitet...",
     "fields": {
       "fullName": "Vor- und Nachname",
       "phone": "Telefonnummer",
@@ -94,10 +93,22 @@
       "special_occasion": "Besonderer Anlass",
       "other": "Andere"
     },
-    "success": "Ihre Reservierungsanfrage wurde erfolgreich übermittelt. Wir kontaktieren Sie zur Bestätigung.",
-    "error": "Die Anfrage konnte derzeit nicht gesendet werden. Bitte versuchen Sie es erneut.",
-    "sendWhatsApp": "Anfragedaten zusätzlich über WhatsApp senden",
-    "whatsappNote": "Ohne Ihre Bestätigung in WhatsApp wird keine Nachricht automatisch versendet."
+    "success": "Ihre Reservierungsanfrage ist bereit, WhatsApp sollte sich in einem neuen Tab geöffnet haben.",
+    "openWhatsApp": "WhatsApp öffnen",
+    "whatsappNote": "Es wird nichts versendet, bevor Sie in WhatsApp auf Senden tippen.",
+    "whatsappMessage": {
+      "greeting": "Hallo,",
+      "intro": "ich möchte eine Reservierungsanfrage für Tiberias View senden.",
+      "name": "Name",
+      "date": "Datum",
+      "time": "Uhrzeit",
+      "guests": "Personen",
+      "type": "Reservierungsart",
+      "whatsapp": "WhatsApp",
+      "notes": "Anmerkungen",
+      "disclaimer": "Dies ist eine Reservierungsanfrage — bitte Verfügbarkeit bestätigen.",
+      "closing": "Vielen Dank."
+    }
   },
   "validation": {
     "fullNameMin": "Bitte geben Sie einen gültigen Namen ein",
@@ -108,10 +119,7 @@
     "timeRequired": "Bitte wählen Sie eine Uhrzeit",
     "guestMin": "Mindestens 1 Person erforderlich",
     "guestMax": "Maximal 200 Personen",
-    "messageMax": "Nachricht ist zu lang",
-    "emailInvalid": "Bitte geben Sie eine gültige E-Mail ein",
-    "passwordMin": "Passwort ist zu kurz",
-    "idInvalid": "Ungültige ID"
+    "messageMax": "Nachricht ist zu lang"
   },
   "location": {
     "eyebrow": "So finden Sie uns",
@@ -125,40 +133,6 @@
     "call": "Anrufen",
     "whatsapp": "WhatsApp",
     "facebook": "Facebook"
-  },
-  "admin": {
-    "title": "Reservierungsverwaltung",
-    "loginTitle": "Admin-Anmeldung",
-    "email": "E-Mail",
-    "password": "Passwort",
-    "login": "Anmelden",
-    "logout": "Abmelden",
-    "loadError": "Daten konnten nicht geladen werden",
-    "status": "Status",
-    "date": "Datum",
-    "time": "Zeit",
-    "guestCount": "Gäste",
-    "name": "Name",
-    "phone": "Telefon",
-    "actions": "Aktionen",
-    "filterStatus": "Nach Status filtern",
-    "filterDate": "Nach Datum filtern",
-    "allStatuses": "Alle Status",
-    "empty": "Noch keine Anfragen",
-    "updated": "Status aktualisiert",
-    "updateFailed": "Status konnte nicht aktualisiert werden",
-    "openWhatsApp": "WhatsApp öffnen",
-    "statuses": {
-      "pending": "Ausstehend",
-      "confirmed": "Bestätigt",
-      "rejected": "Abgelehnt",
-      "cancelled": "Storniert"
-    },
-    "setTo": {
-      "confirmed": "Bestätigen",
-      "rejected": "Ablehnen",
-      "cancelled": "Stornieren"
-    }
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten",
