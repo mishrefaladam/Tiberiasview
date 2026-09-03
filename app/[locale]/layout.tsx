@@ -5,6 +5,7 @@ import {routing, type AppLocale} from "@/i18n/routing";
 import {SiteHeader} from "@/components/layout/site-header";
 import {SiteFooter} from "@/components/layout/site-footer";
 import {MobileWhatsAppButton} from "@/components/layout/mobile-whatsapp-button";
+import {DocumentAttributes} from "@/components/layout/document-attributes";
 
 type LocaleLayoutProps = {
   children: React.ReactNode;
@@ -27,6 +28,7 @@ export default async function LocaleLayout({children, params}: LocaleLayoutProps
 
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
+      <DocumentAttributes locale={locale as AppLocale} />
       <SiteHeader locale={locale as AppLocale} />
       {children}
       <SiteFooter locale={locale as AppLocale} />

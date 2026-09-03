@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Manrope, Noto_Sans_Arabic } from "next/font/google";
-import { headers } from "next/headers";
 import "./globals.css";
 
 const latinFont = Manrope({
@@ -23,13 +22,9 @@ export const metadata: Metadata = {
   description: "Multilingual website for Tiberias View in Samma, Jordan.",
 };
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const requestHeaders = await headers();
-  const locale = requestHeaders.get("x-tv-locale") ?? "ar";
-  const direction = requestHeaders.get("x-tv-dir") ?? "rtl";
-
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang={locale} dir={direction} className={`${latinFont.variable} ${arabicFont.variable} h-full antialiased`}>
+    <html lang="ar" dir="rtl" className={`${latinFont.variable} ${arabicFont.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-cream text-ink">{children}</body>
     </html>
   );
