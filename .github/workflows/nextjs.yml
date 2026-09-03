@@ -70,7 +70,7 @@ jobs:
       - name: Build with Next.js
         env:
           GITHUB_PAGES: "true"
-          NEXT_PUBLIC_SITE_URL: "https://mishrefaladam.github.io/Tiberiasview"
+          NEXT_PUBLIC_SITE_URL: "https://tiberiasview.com"
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
