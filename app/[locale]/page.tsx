@@ -8,9 +8,7 @@ import {ReservationCtaSection} from "@/components/sections/reservation-cta-secti
 import {LocationSection} from "@/components/sections/location-section";
 import {ContactSection} from "@/components/sections/contact-section";
 import {routing, type AppLocale} from "@/i18n/routing";
-import {siteConfig} from "@/lib/site-config";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+import {siteConfig, siteUrl} from "@/lib/site-config";
 
 type HomePageProps = {
   params: Promise<{locale: string}>;
@@ -73,20 +71,6 @@ export default async function HomePage({params}: HomePageProps) {
       streetAddress: siteConfig.locationEn,
       addressLocality: "Samma",
       addressCountry: "JO",
-    },
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday",
-      ],
-      opens: "00:00",
-      closes: "23:59",
     },
     sameAs: [siteConfig.facebookHref],
   };

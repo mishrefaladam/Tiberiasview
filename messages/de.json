@@ -10,8 +10,7 @@
     "arabicName": "متنزه واستراحة بحيرة طبريا - صما",
     "phone": "+962 7 7225 6108",
     "locationAr": "منتزه اطلالة طبريا، صما، الأردن",
-    "locationEn": "Tiberias View Park, Samma, Jordan",
-    "open24": "24 Stunden geöffnet"
+    "locationEn": "Tiberias View Park, Samma, Jordan"
   },
   "language": {
     "switch": "Sprache",
@@ -28,6 +27,7 @@
     "booking": "Reservierung"
   },
   "hero": {
+    "eyebrow": "Familienpark mit Seeblick",
     "title": "Tiberias View",
     "headline": "Malerische Aussicht, familiäre Atmosphäre und besondere Momente",
     "description": "Genießen Sie den Blick auf den See Tiberias sowie ruhige Familienbereiche inmitten der Natur.",
@@ -48,12 +48,30 @@
     "title": "Was bietet der Park?",
     "description": "Ein naturverbundener Ort für Familien mit Komfort und beeindruckender Aussicht.",
     "items": {
-      "family": "Familienbereiche",
-      "kids": "Sicherer Kinderspielbereich",
-      "grill": "Ausgewiesene Grillbereiche",
-      "view": "Aussicht auf den See Tiberias",
-      "photo": "Fotospots",
-      "nature": "Naturnahes Ambiente"
+      "family": {
+        "title": "Familienbereiche",
+        "description": "Bequeme Sitzbereiche für die ganze Familie."
+      },
+      "kids": {
+        "title": "Sicherer Kinderspielbereich",
+        "description": "Ein sicherer Bereich, in dem Kinder frei spielen können."
+      },
+      "grill": {
+        "title": "Ausgewiesene Grillbereiche",
+        "description": "Eigens eingerichtete Plätze zum Grillen im Freien."
+      },
+      "view": {
+        "title": "Aussicht auf den See Tiberias",
+        "description": "Freie Sicht über den See und das Tal."
+      },
+      "photo": {
+        "title": "Fotospots",
+        "description": "Malerische Ecken für unvergessliche Fotos."
+      },
+      "nature": {
+        "title": "Naturnahes Ambiente",
+        "description": "Frische Luft und Grün im ganzen Park."
+      }
     }
   },
   "gallery": {
@@ -62,8 +80,15 @@
     "description": "Echte Fotos der Anlage für einen realistischen Eindruck.",
     "hint": "Tippen Sie auf ein Bild für die Vollansicht",
     "heroSunsetAlt": "Sonnenuntergang im Tiberias View",
+    "parkGroundsAlt": "Tagesansicht des Parkgeländes mit Steinmauern und Laternen",
     "heartViewAlt": "Herz-Fotospot mit Blick auf den See Tiberias",
-    "fountainTerraceAlt": "Familienterrasse und Brunnenbereich"
+    "fountainTerraceAlt": "Familienterrasse und Brunnenbereich",
+    "sunsetArchAlt": "Sonnenuntergang durch den sonnenförmigen Bogen",
+    "gardenDetailAlt": "Topfpflanzen und ein kleiner Brunnen an einer Steinmauer",
+    "nightViewAlt": "Nächtlicher Blick über das Tal mit den Lichtern der Stadt",
+    "fountainEveningAlt": "Die Brunnenterrasse abends beleuchtet",
+    "pergolaAlt": "Sitzbereich unter der Pergola in der Abenddämmerung",
+    "heartFamilyAlt": "Ein Besucher am herzförmigen Fotospot"
   },
   "bookingCta": {
     "title": "Besuch geplant?",

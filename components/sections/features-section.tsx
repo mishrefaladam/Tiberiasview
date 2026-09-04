@@ -31,13 +31,16 @@ export async function FeaturesSection({locale}: FeaturesSectionProps) {
             return (
               <article
                 key={item.key}
-                className="tv-card p-5 transition duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-deep-green/10"
+                className="tv-card p-6 transition duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-deep-green/10"
                 style={{animationDelay: `${index * 80}ms`}}
               >
-                <div className={`inline-flex rounded-xl ${item.tone} p-2 text-white`}>
+                <div className={`inline-flex rounded-xl ${item.tone} p-2.5 text-white`}>
                   <Icon size={20} />
                 </div>
-                <h3 className="mt-3 text-lg font-bold text-ink">{t(`features.items.${item.key}`)}</h3>
+                <h3 className="mt-4 text-lg font-bold text-ink">{t(`features.items.${item.key}.title`)}</h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-ink/68">
+                  {t(`features.items.${item.key}.description`)}
+                </p>
               </article>
             );
           })}

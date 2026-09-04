@@ -15,8 +15,8 @@ export async function AboutSection({locale}: AboutSectionProps) {
         <div className="tv-card grid gap-0 overflow-hidden md:grid-cols-2">
           <div className="relative min-h-64 md:min-h-full">
             <Image
-              src="/images/fountain-terrace.jpg"
-              alt={t("gallery.fountainTerraceAlt")}
+              src="/images/fountain-evening.jpg"
+              alt={t("gallery.fountainEveningAlt")}
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"

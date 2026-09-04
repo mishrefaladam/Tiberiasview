@@ -1,7 +1,6 @@
 import type {MetadataRoute} from "next";
 import {routing} from "@/i18n/routing";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+import {siteUrl} from "@/lib/site-config";
 
 export const dynamic = "force-static";
 

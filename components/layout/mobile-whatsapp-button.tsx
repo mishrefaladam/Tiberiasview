@@ -1,8 +1,19 @@
+"use client";
+
 import Link from "next/link";
+import {usePathname} from "next/navigation";
 import {MessageCircle} from "lucide-react";
 import {siteConfig} from "@/lib/site-config";
 
 export function MobileWhatsAppButton() {
+  const pathname = usePathname();
+
+  // The booking page is itself a WhatsApp flow with its own send button, and the
+  // floating bubble overlaps the date/time fields on small screens — hide it there.
+  if (pathname.includes("/booking")) {
+    return null;
+  }
+
   return (
     <Link
       href={siteConfig.whatsappHref}

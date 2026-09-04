@@ -1,3 +1,8 @@
+// Falls back to the real production domain (not localhost) so a deployment that
+// forgets to set NEXT_PUBLIC_SITE_URL never leaks "localhost" into shared links,
+// metadata, or the sitemap. Local dev should set it via .env.local when needed.
+export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://tiberiasview.com";
+
 export const siteConfig = {
   name: "Tiberias View",
   arabicName: "متنزه واستراحة بحيرة طبريا - صما",
@@ -15,14 +20,62 @@ export const galleryImages = [
   {
     src: "/images/hero-sunset.jpg",
     altKey: "gallery.heroSunsetAlt",
+    width: 1177,
+    height: 1577,
+  },
+  {
+    src: "/images/park-grounds-daylight.jpg",
+    altKey: "gallery.parkGroundsAlt",
+    width: 2048,
+    height: 755,
   },
   {
     src: "/images/heart-view.jpg",
     altKey: "gallery.heartViewAlt",
+    width: 1206,
+    height: 1583,
   },
   {
     src: "/images/fountain-terrace.jpg",
     altKey: "gallery.fountainTerraceAlt",
+    width: 1180,
+    height: 1545,
+  },
+  {
+    src: "/images/sunset-arch-view.jpg",
+    altKey: "gallery.sunsetArchAlt",
+    width: 922,
+    height: 1892,
+  },
+  {
+    src: "/images/garden-fountain-detail.jpg",
+    altKey: "gallery.gardenDetailAlt",
+    width: 1170,
+    height: 1577,
+  },
+  {
+    src: "/images/night-view-terrace.jpg",
+    altKey: "gallery.nightViewAlt",
+    width: 2048,
+    height: 755,
+  },
+  {
+    src: "/images/fountain-evening.jpg",
+    altKey: "gallery.fountainEveningAlt",
+    width: 950,
+    height: 1600,
+  },
+  {
+    src: "/images/pergola-seating-dusk.jpg",
+    altKey: "gallery.pergolaAlt",
+    width: 1536,
+    height: 2048,
+  },
+  {
+    src: "/images/heart-photo-spot-family.jpg",
+    altKey: "gallery.heartFamilyAlt",
+    width: 922,
+    height: 1679,
   },
 ] as const;
 

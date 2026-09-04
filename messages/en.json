@@ -10,8 +10,7 @@
     "arabicName": "متنزه واستراحة بحيرة طبريا - صما",
     "phone": "+962 7 7225 6108",
     "locationAr": "منتزه اطلالة طبريا، صما، الأردن",
-    "locationEn": "Tiberias View Park, Samma, Jordan",
-    "open24": "Open 24 hours"
+    "locationEn": "Tiberias View Park, Samma, Jordan"
   },
   "language": {
     "switch": "Language",
@@ -28,6 +27,7 @@
     "booking": "Booking"
   },
   "hero": {
+    "eyebrow": "Family Park & Lake View",
     "title": "Tiberias View",
     "headline": "Scenic views, family moments, and memories that last",
     "description": "Enjoy a beautiful view over Lake Tiberias and calm family seating in a natural outdoor setting.",
@@ -48,12 +48,30 @@
     "title": "What the park offers",
     "description": "A family-friendly destination that combines comfort, nature, and an inspiring view.",
     "items": {
-      "family": "Family Areas",
-      "kids": "Safe Kids' Play Area",
-      "grill": "Dedicated Barbecue Areas",
-      "view": "View of Lake Tiberias",
-      "photo": "Photogenic Spots",
-      "nature": "Natural Outdoor Atmosphere"
+      "family": {
+        "title": "Family Areas",
+        "description": "Comfortable seating for the whole family to relax together."
+      },
+      "kids": {
+        "title": "Safe Kids' Play Area",
+        "description": "A secure space where children can play freely."
+      },
+      "grill": {
+        "title": "Dedicated Barbecue Areas",
+        "description": "Purpose-built spots for grilling and outdoor cooking."
+      },
+      "view": {
+        "title": "View of Lake Tiberias",
+        "description": "Uninterrupted views over the lake and valley below."
+      },
+      "photo": {
+        "title": "Photogenic Spots",
+        "description": "Scenic corners made for memorable photos."
+      },
+      "nature": {
+        "title": "Natural Outdoor Atmosphere",
+        "description": "Fresh air and greenery throughout the park."
+      }
     }
   },
   "gallery": {
@@ -62,8 +80,15 @@
     "description": "Real photos from the venue to give you an authentic impression.",
     "hint": "Tap any image for fullscreen view",
     "heroSunsetAlt": "Sunset view at Tiberias View",
+    "parkGroundsAlt": "Daytime view of the park grounds with stone walls and lamp posts",
     "heartViewAlt": "Heart-shaped photo spot overlooking Lake Tiberias",
-    "fountainTerraceAlt": "Family terrace and fountain area at the park"
+    "fountainTerraceAlt": "Family terrace and fountain area at the park",
+    "sunsetArchAlt": "Sunset framed through the sun-shaped arch",
+    "gardenDetailAlt": "Potted plants and a small fountain along a stone wall",
+    "nightViewAlt": "Night view over the valley with city lights",
+    "fountainEveningAlt": "Fountain terrace lit up in the evening",
+    "pergolaAlt": "Seating area under the pergola at dusk",
+    "heartFamilyAlt": "A visitor enjoying the heart-shaped photo spot"
   },
   "bookingCta": {
     "title": "Planning a visit?",

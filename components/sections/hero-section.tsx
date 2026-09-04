@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import {getTranslations} from "next-intl/server";
+import {MapPin} from "lucide-react";
 import {siteConfig} from "@/lib/site-config";
 import type {AppLocale} from "@/i18n/routing";
 
@@ -27,10 +28,15 @@ export async function HeroSection({locale}: HeroSectionProps) {
 
       <div className="tv-container relative py-24 md:py-32">
         <div className="max-w-3xl tv-reveal">
-          <p className="tv-eyebrow">{t("common.open24")}</p>
+          <p className="tv-eyebrow">{t("hero.eyebrow")}</p>
           <h1 className="tv-title mt-4 text-white">{t("hero.title")}</h1>
           <h2 className="mt-4 text-2xl font-semibold text-white/95 md:text-3xl">{t("hero.headline")}</h2>
           <p className="tv-subtitle mt-5 text-white/92">{t("hero.description")}</p>
+
+          <p className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-white/85">
+            <MapPin size={16} className="shrink-0 text-gold" />
+            {siteConfig.locationEn}
+          </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href={`/${locale}/booking`} className="tv-btn-primary">

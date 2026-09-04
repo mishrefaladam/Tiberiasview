@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {getTranslations} from "next-intl/server";
 import {MapPin} from "lucide-react";
@@ -27,13 +28,21 @@ export async function LocationSection({locale}: LocationSectionProps) {
               {t("location.openMap")}
             </Link>
           </div>
-          <div className="tv-gradient-bg flex min-h-56 items-center justify-center border-t border-deep-green/8 p-8 md:min-h-full md:border-t-0 md:border-s">
-            <div className="text-center">
-              <span className="mx-auto inline-flex rounded-full bg-deep-green p-4 text-gold">
+          <div className="relative flex min-h-56 items-center justify-center border-t border-deep-green/8 p-8 md:min-h-full md:border-t-0 md:border-s">
+            <Image
+              src="/images/night-view-terrace.jpg"
+              alt={t("gallery.nightViewAlt")}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 40vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-deep-green/85 via-deep-green/45 to-deep-green/20" />
+            <div className="relative text-center">
+              <span className="mx-auto inline-flex rounded-full bg-white text-deep-green p-4">
                 <MapPin size={28} />
               </span>
-              <p className="mt-4 text-lg font-bold text-deep-green">{t("common.brand")}</p>
-              <p className="mt-1 text-sm text-ink/70">{siteConfig.locationEn}</p>
+              <p className="mt-4 text-lg font-bold text-white">{t("common.brand")}</p>
+              <p className="mt-1 text-sm text-white/80">{siteConfig.locationEn}</p>
             </div>
           </div>
         </div>

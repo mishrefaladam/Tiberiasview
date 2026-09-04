@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope, Noto_Sans_Arabic } from "next/font/google";
+import { siteUrl } from "@/lib/site-config";
 import "./globals.css";
 
 const latinFont = Manrope({
@@ -13,8 +14,6 @@ const arabicFont = Noto_Sans_Arabic({
   subsets: ["arabic"],
   weight: ["400", "500", "600", "700", "800"],
 });
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
