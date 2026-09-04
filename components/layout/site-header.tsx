@@ -69,8 +69,8 @@ export function SiteHeader({locale}: SiteHeaderProps) {
             TV
           </div>
           <div>
-            <p dir="rtl" className="text-sm text-deep-green/70">{siteConfig.arabicName}</p>
             <p className="text-lg font-extrabold tracking-tight text-deep-green">{siteConfig.name}</p>
+            <p dir="rtl" className="text-sm text-deep-green/70">{siteConfig.arabicNameShort}</p>
           </div>
         </Link>
 

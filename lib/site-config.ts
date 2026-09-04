@@ -6,6 +6,8 @@ export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://tiberiasview
 export const siteConfig = {
   name: "Tiberias View",
   arabicName: "متنزه واستراحة بحيرة طبريا - صما",
+  // Used in the header logo lockup, where the "- صما" suffix is dropped.
+  arabicNameShort: "متنزه واستراحة بحيرة طبريا",
   phoneDisplay: "+962 7 7225 6108",
   phoneHref: "tel:+962772256108",
   whatsappDisplay: "+962772256108",
